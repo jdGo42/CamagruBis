@@ -1,0 +1,972 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#contenu{
+    min-height: 100%;
+    position: relative;
+}
+
+nav{
+    background-color: white;
+    width: 225px;
+    height: 100%;
+    box-shadow: 1px 5px 5px rgb(165, 165, 165);
+    position: fixed;
+    left: 0;
+    border-top: 1px rgb(165, 165, 165) solid;
+    margin-top: 140px;
+}
+
+@font-face{
+    font-family: 'GrandHotel';
+    src: url('/camagru/public/polices/GrandHotel-Regular.otf');
+}
+
+ul{
+    list-style-type: none;
+    font-size: 35px;
+    font-family: 'GrandHotel';
+}
+
+li{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+
+.border{
+    border-bottom: 1px rgb(165, 165, 165) solid;
+    width: 95px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.first{
+    color: #1e272e;
+    padding-top: 20px;
+}
+
+.this{
+    color: #b33939;
+    margin-top: 20px;
+}
+
+.other{
+    color: #1e272e;
+    margin-top: 20px;
+}
+
+#home{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#gallery{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#camera{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#profile{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+section{
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 156px;
+    padding-left: 240px;
+    padding-bottom: 240px;
+}
+
+#cont-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#frame-cam{
+    border: 5px #636e72 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+#photo-list{
+    overflow: auto;
+    width: 180px;
+    height: 490px;
+    background-color: white;
+    border: 1px #a4b0be solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aside-msg{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(142, 142, 142);
+    margin-top: 15px;
+}
+
+.div-padd-img{
+    padding-bottom: 2px;
+    padding-top: 8px;
+}
+
+.aside-image{
+    width: 150px;
+    padding: 0;
+    border: 1px #485460 solid;
+    border-radius: 6px;
+}
+
+#canvas-and-photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+    margin-top: -35px;
+}
+
+#album-photo{
+    width: 23px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+
+#album-text{
+    font-family: 'GrandHotel';    
+    font-size: 25px;
+    color: #b33939;
+    margin: 0px;
+}
+
+#canvas{
+    border: 5px #222f3e solid;
+    border-radius: 8px;
+}
+
+#take-picture-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#take-picture{
+    display: none;
+    height: 50px;
+    width: 65px;
+    margin-left: 3px;
+    border: 0;
+    border-radius: 18px;
+    background: #b33939;
+    cursor: pointer;
+}
+
+#take-photo{
+    width: 20px;
+    margin-bottom: -4px;
+}
+
+
+#select-filter{
+    display: none;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    margin-top: 5px;
+    color: brown;
+}
+
+#save-butt{
+    display: none;
+    margin-top: -125px;
+    margin-right: -211px;
+    margin-bottom: 84px;
+}
+
+#save{
+    height: 40px;
+    width: 100px;
+    border: 0;
+    border-radius: 8px;
+    background: rgb(95, 203, 247);
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 3px;
+    margin-right: 45px;
+    opacity: 0.7;
+}
+
+#save:active{
+    background: #222f3e;
+}
+
+#save-img{
+    width: 15px;
+    margin-right: 5px;
+    margin-bottom: -1px;
+}
+
+#delete{
+    height: 40px;
+    width: 100px;
+    border: 0;
+    border-radius: 8px;
+    background: #EA2027;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 2px;
+    opacity: 0.7;
+}
+
+#delete:active{
+    background: #ff7979;
+}
+
+#delete-img{
+    width: 18px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+
+#buttons-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: -220px;
+    margin-top: 20px;
+}
+
+#button-cam{
+    height: 40px;
+    width: 160px;
+    border: 0;
+    border-radius: 8px;
+    background: #222f3e;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 1px;
+    margin-right: 120px;
+}
+
+#button-cam:active{
+    background: #40739e;
+}
+
+#rec{
+    width: 14px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+
+#downl-file{
+    height: 40px;
+    width: 160px;
+    border: 0;
+    border-radius: 5px;
+    background: #f19066;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 8px;
+}
+
+#downl-file:active{
+    background: #eb4d4b;
+}
+
+#import{
+    width: 18px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    margin-left:11px;
+    margin-top: 10px;
+}
+
+#filters-div{
+    margin-top: 40px;
+}
+
+#filter-cont{
+    margin-left: 10px;
+}
+
+#filter{
+    width: 18px;
+    margin-right: 5px;
+}
+
+#filters-tittle {
+    font-family: 'GrandHotel';
+    font-size: 25px;
+    color: #b33939;
+    margin: 0;
+}
+
+#filters-cont{
+    overflow: auto;
+    height: 140px;
+    width: 900px;
+    background-color: white;
+    border: 1px #a4b0be solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+.filters-png{
+    margin-left: 20px;
+    padding: 0;
+    padding-right: 10px;
+
+}
+
+.filters-img{
+    width: 70px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 1060px)
+{
+    #album
+    {
+        margin-right: 20px;
+    }
+
+    #album-photo
+    {
+        width: 19px;
+        margin-right: 4px;
+    }
+
+    #album-text
+    {
+        font-size: 20px;
+    }
+
+    #photo-list
+    {
+        width: 150px;
+        height: 407px;
+    }
+
+    #aside-msg
+    {
+        font-size: 10px;
+    }
+    
+    .aside-image
+    {
+        width: 130px;
+    }
+
+    #canvas
+    {
+        width: 515px;
+        height: 400px;
+    }
+
+    #save-butt
+    {
+        margin-top: -95px;
+        margin-right: -161px;
+        margin-bottom: 55px;
+    }
+    
+    #save
+    {
+        height: 39px;
+        width: 97px;
+    }
+
+    #delete
+    {
+        height: 39px;
+        width: 97px;
+    }
+
+    #take-picture-div
+    {
+        margin-left: 5px;
+    }
+
+    #take-picture
+    {
+        width: 52px;
+        height: 43px;
+    }
+
+    #take-photo
+    {
+        width: 17px;
+    }
+
+    #select-filter
+    {
+        font-size: 6px;
+    }
+
+    #buttons-div
+    {
+        margin-top: 15px;
+        margin-right: -170px;
+    }
+
+    #rec
+    {
+        width: 13px;
+    }
+
+    #button-cam
+    {
+        font-size: 13px;
+        width: 140px;
+        height: 39px;
+        margin-right: 80px;
+    }
+
+    #import
+    {
+        width: 16px;
+        margin-top: 12px;
+    }
+
+    #downl-file
+    {
+        font-size: 13px;
+        width: 140px;
+        height: 39px;
+    }
+
+    #filter
+    {
+        width: 17px;
+        margin-right: 3px;
+        margin-bottom: -2px;
+    }
+
+    #filters-tittle
+    {
+        font-size: 20px;
+    }
+
+    #filters-cont
+    {
+        width: 700px;
+        height: 100px;
+    }
+
+    .filters-png
+    {
+        margin-left: 10px;
+    }
+
+    .filters-img
+    {
+        width: 50px;
+    }
+}
+
+@media all and (max-width: 950px)
+{
+    nav
+    {
+        margin-top: 105px;
+        width: 175px;
+    }
+
+    ul
+    {
+        font-size: 27px;
+    }
+
+    #home
+    {
+        width: 25px;
+    }
+
+    #gallery
+    {
+        width: 25px;
+    }
+
+    #camera
+    {
+        width: 25px;
+    }
+
+    #profile
+    {
+        width: 25px;
+    }
+        
+    .border
+    {
+        width: 75px;
+    }
+
+    section
+    {
+        padding-top: 115px;
+        padding-left: 180px;
+    }
+
+    #canvas-and-photos
+    {
+        flex-direction: column;
+    }
+
+    #album
+    {
+        margin-right: 0px;
+        margin-top: -55px;
+        align-items: initial;
+        margin-bottom: 10px;
+    }
+
+    #album-photo
+    {
+        width: 16px;
+        margin-right: 3px;
+        margin-bottom: -1px;
+        margin-left: 8px;
+    }
+
+    #album-text
+    {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #photo-list
+    {
+        width: 535px;
+        height: 95px;
+        background: whitesmoke;
+        flex-direction: row;
+    }
+
+    #aside-msg
+    {
+        margin-top: 0px;
+        margin: auto;
+        font-size: 11px;
+    }
+
+    .div-padd-img
+    {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .aside-image
+    {
+        width: 100px;
+    }
+
+    #canvas
+    {
+        width: 535px;
+        height: 415px;
+    }
+
+    #save-butt
+    {
+        margin-top: -70px;
+        margin-right: 0px;
+        margin-bottom: 35px;
+    }
+
+    #save-img
+    {
+        width: 13px;
+        margin-bottom: -1px;
+    }
+
+    #save
+    {
+        height: 35px;
+        width: 95px;
+        font-size: 14px;
+        margin-right: 35px;
+    }
+
+    #delete-img
+    {
+        width: 16px;
+        margin-bottom: -3px;
+    }
+
+    #delete
+    {
+        height: 35px;
+        width: 95px;
+        font-size: 14px;
+        padding-left: 0px;
+    }
+
+    #take-picture-div
+    {
+        margin-left: 0px;
+    }
+
+    #take-picture
+    {
+        height: 40px;
+        width: 50px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    #take-photo
+    {
+        width: 16px;
+        margin-bottom: -3px;
+    }
+
+    #buttons-div
+    {
+        margin-right: 0px;
+        margin-top: 12px;
+    }
+
+    #rec
+    {
+        width: 12px;
+        margin-right: 4px;
+        margin-bottom: -1px;
+    }
+
+    #button-cam
+    {
+        height: 35px;
+        width: 130px;
+        font-size: 13px;
+        padding-left: 1px;
+        margin-right: 85px;
+    }
+
+    #import
+    {
+        width: 15px;
+        margin-right: 4px;
+        margin-bottom: -3px;
+        margin-top: 10px;
+    }
+
+    #downl-file
+    {
+        height: 35px;
+        width: 130px;
+        font-size: 13px;
+        padding-left: 1px;
+    }
+
+    #filter-cont
+    {
+        margin-left: 8px;
+    }
+
+    #filter
+    {
+        width: 14px;
+        margin-right: 2px;
+        margin-bottom: -1px;
+    }
+
+    #filters-tittle
+    {
+        font-size: 18px;
+    }
+
+    #filters-cont
+    {
+        height: 100px;
+        width: 535px;
+    }
+
+    .filters-png
+    {
+        margin-left: 10px;
+    }
+
+    .filters-img
+    {
+        width: 53px;
+    }
+}
+
+@media all and (max-width: 600px)
+{
+    nav
+    {
+        margin-top: 65px;
+        width: 75px;
+        box-shadow: 0px 5px 5px rgb(165, 165, 165);
+    }
+
+    ul
+    {
+        padding-left: 15px;
+        font-size: 19px;
+    }
+
+    #home
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #gallery
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #camera
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #profile
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    .border
+    {
+        width: 30px;
+    }
+
+    section
+    {
+        padding-left: 85px;
+        padding-bottom: 88px;
+        padding-top: 72px;
+    }
+
+    #album
+    {
+        margin-top: -65px;
+    }
+
+    #album-photo
+    {
+        width: 12px;
+        margin-right: 2px;
+        margin-left: 5px;
+    }
+
+    #album-text
+    {
+        font-size: 14px;
+    }
+
+    #photo-list
+    {
+        width: 240px;
+        height: 50px;
+    }
+
+    #aside-msg
+    {
+        font-size: 8px;
+    }
+
+    .div-padd-img
+    {
+        padding-left: 4px;
+        padding-right: 3px;
+    }
+
+    .aside-image
+    {
+        width: 45px;
+    }
+
+    #canvas
+    {
+        width: 240px;
+        height: 195px;
+    }
+
+    #save-butt
+    {
+        margin-top: -50px;
+        margin-bottom: 24px;
+    }
+
+    #save-img
+    {
+        width: 10px;
+        margin-right: 3px;
+    }
+
+    #save
+    {
+        height: 26px;
+        width: 67px;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+    #delete-img
+    {
+        width: 12px;
+        margin-right: 3px;
+        margin-bottom: -2px;
+    }
+
+    #delete
+    {
+        height: 26px;
+        width: 67px;
+        font-size: 10px;
+    }
+
+    #take-picture
+    {
+        height: 32px;
+        width: 43px;
+        margin-left: 0px;
+        margin-top: 6px;
+    }
+
+    #select-filter
+    {
+        font-size: 7px;
+    }
+
+    #take-photo
+    {
+        width: 13px;
+        margin-bottom: -1px;
+    }
+
+    #buttons-div
+    {
+        margin-right: -25px;
+        margin-top: 8px;
+    }
+
+    #rec
+    {
+        width: 9px;
+        margin-right: 3px;
+        margin-bottom: -1px;
+    }
+
+    #button-cam
+    {
+        width: 80px;
+        height: 25px;
+        font-size: 8px;
+        margin-right: 25px;
+    }
+
+    #import
+    {
+        width: 10px;
+        margin-right: 3px;
+        margin-bottom: -2px;
+        margin-top: 8px;
+        margin-left: 6px;
+    }
+
+    #downl-file
+    {
+        width: 80px;
+        height: 25px;
+        font-size: 8px;
+        margin-right: 20px;
+    }
+
+    #filter-cont
+    {
+        margin-left: 5px;
+    }
+
+    #filter
+    {
+        width: 11px;
+        margin-right: 2px;
+    }
+
+    #filters-tittle
+    {
+        font-size: 14px;
+    }
+
+    #filters-cont
+    {
+        width: 240px;
+        height: 65px;
+    }
+
+    .filters-img
+    {
+        width: 30px;
+    }
+
+    .filters-png
+    {
+        margin-left: 8px;
+        padding-right: 8px;
+    }
+}

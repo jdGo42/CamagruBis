@@ -1,0 +1,570 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#contenu{
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#central{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#poster{
+    width: 340px;
+    height: 565px;
+    margin-right: 3px;
+    z-index: -1;
+}
+
+#bloc
+{
+    margin-top: 15px;
+}
+
+#connexion_frame{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px rgb(200, 200, 200) solid;
+    width: 360px;
+    height: 465px;
+}
+
+#logo{
+    width: 285px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#phrase{
+    margin: 0px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: rgb(142, 142, 142);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#first{
+    margin-bottom: 9px;
+}
+
+#second{
+    margin-bottom: 21px;
+}
+
+input{
+    background-color: whitesmoke;
+    width: 290px;
+    height: 40px;
+    border: 1px rgb(200, 200, 200) solid;
+    padding-left: 11px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+    border-radius: 4px;
+}
+
+button{
+    width: 303px;
+    height: 33px;
+    border: 1px rgb(200, 200, 200) solid;
+    background-color: #b33939;
+    font-size: 15px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+button:active {
+    background-color: #ee928b;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 149, 246);
+}
+
+#f_pass{
+    font-weight: normal;
+    color: rgb(0, 55, 107);
+}
+
+#inscription_frame{
+    background-color: white;
+    width: 360px;
+    height: 65px;
+    border: 1px rgb(200, 200, 200) solid;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inscription{
+    margin: 0;
+    font-size: 14px;
+}
+
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+#error{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+    color: #EA2027;
+    max-width: 330px;
+}
+
+#messVald{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+    color: #27ae60;
+    max-width: 330px;
+}
+
+#site-pictures{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 145px;
+    margin-bottom: 160px;
+    align-items: center;
+}
+
+@font-face{
+    font-family: 'GrandHotel';
+    src: url('/camagru/public/polices/GrandHotel-Regular.otf');
+}
+
+#user-tittle{
+    margin: 0px;
+    margin-top: 20px;
+    font-family: 'GrandHotel';
+    font-size: 35px;
+    color: #353b48;
+}
+
+#pictures-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    width: 1200px;
+    height: 530px;
+}
+
+.img-and-username{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 1px;
+    width: 272px;
+    height: 228px;
+    border-bottom: 1px #b2bec3 solid;
+    border-radius: 2px;
+}
+
+.picture-div{
+    position: relative;
+    display: inline;
+    width: 273px;
+    height: 205px;
+}
+
+.user-pictures{
+    width: 270px;
+    border-radius: 2px;
+}
+
+.username-username{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-top: 2px;
+    justify-content: space-between;
+}
+
+.user-2{
+    position: relative;
+    bottom: 1px;
+}
+
+.logo-username{
+    width: 11px;
+    height: 11px;
+}
+
+.user-name{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #353b48;
+    font-weight: bold;
+    position: relative;
+    right: 2px;
+}
+
+.time-picture{
+    text-align: center;
+    color: #353b48;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    right: 6px;
+    top: 4px;
+}
+
+.time-br{
+    display: none;
+}
+
+#number-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.number{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    width: 22px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    text-decoration: none;
+    color: #1e272e;
+    border-radius: 3px;
+    background: whitesmoke;
+    margin-right: 3px;
+}
+
+.number:active{
+    background: #dcdde1;
+}
+
+#this-number{
+    background: #b33939;
+    color: whitesmoke;
+}
+
+#this-arrow{
+    background: whitesmoke;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+}
+
+#rights{
+    font-family: 'JAi_';
+    color: rgb(142,142,142);
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 40px;
+}
+
+@media all and (max-width: 1060px)
+{
+    #user-tittle
+    {
+        font-size: 32px;
+    }
+
+    #site-pictures
+    {
+        margin-top: 70px;
+    }
+
+    #pictures-div
+    {
+        width: 100%;
+        height: 520px;
+    }
+
+    .img-and-username
+    {
+        width: 230px;
+        height: 200px;
+    }
+
+    .picture-div
+    {
+        width: 230px;
+        height: 173px;
+    }
+
+    .user-pictures
+    {
+        width: 230px;
+    }
+
+    .username-username
+    {
+        margin-top: 5px;
+    }
+
+    .user-name
+    {
+        font-size: 11px;
+    }
+
+    .time-picture
+    {
+        font-size: 9px;
+    }
+
+    .number
+    {
+        font-size: 15px;
+        width: 19px;
+        height: 32px;
+    }
+}
+
+
+@media all and (max-width: 950px)
+{
+    #rights
+    {
+        padding-left: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #site-pictures
+    {
+        margin-top: 75px;
+    }
+
+    #user-tittle
+    {
+        font-size: 30px;
+    }
+
+    #pictures-div
+    {
+        height: 1150px;
+    }
+
+    .img-and-username
+    {
+        width: 280px;
+        height: 241px;
+    }
+
+    .picture-div
+    {
+        width: 280px;
+        height: 210px;
+    }
+
+    .user-pictures
+    {
+        width: 280px;
+    }
+}
+
+@media all and (max-width: 700px)
+{
+
+    #bloc
+    {
+        width: auto;
+    }
+
+    #poster
+    {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 600px)
+{
+    #central
+    {
+        margin-top: 35px;
+    }
+
+    #connexion_frame
+    {
+        width: 300px;
+        height: 415px;
+    }
+
+    #f_pass
+    {
+        font-size: 12px;
+    }
+
+    #inscription_frame
+    {
+        width: 300px;
+        height: 50px;
+    }
+
+    #inscription
+    {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    #logo
+    {
+        width: 240px;
+    }
+    
+    #phrase
+    {
+        font-size:12px;
+    }
+    
+    input
+    {
+        width: 245px;
+        height: 35px;
+        font-size: 11px;
+    }
+
+    button
+    {
+        width: 258px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    #error{
+        max-width: 300px;
+        font-size: 11px;
+    }
+
+    #rights
+    {
+        padding-left: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #error{
+        font-size: 11px;
+        margin-top: -4px;
+    }
+    
+    #messVald{
+        font-size: 11px;
+        margin-top: -4px;
+    }
+
+    #site-pictures
+    {
+        margin-top: 45px;
+    }
+
+    #user-tittle
+    {
+        font-size: 23px;
+    }
+
+    #pictures-div
+    {
+        height: 780px;
+        margin-top: 55px;
+        margin-bottom: 0px;
+    }
+
+    .img-and-username
+    {
+        width: 160px;
+        height: 149px;
+    }
+
+    .picture-div
+    {
+        width: 160px;
+        height: 120px;
+    }
+
+    .user-pictures
+    {
+        width: 160px;
+    }
+
+    .username-username
+    {
+        margin-top: 3px;
+    }
+
+    .logo-username
+    {
+        width: 8px;
+        height: 8px;
+    }
+
+    .user-name
+    {
+        font-size: 9px;
+    }
+
+    .time-picture
+    {
+        font-size: 8px;
+    }
+
+    .time-br
+    {
+        display: initial;
+    }
+
+    .number
+    {
+        font-size: 11px;
+        width: 13px;
+        height: 23px;
+    }
+}

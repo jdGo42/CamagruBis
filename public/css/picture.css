@@ -1,0 +1,718 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#contenu{
+    min-height: 100%;
+    position: relative;
+}
+
+nav{
+    background-color: white;
+    width: 225px;
+    height: 100%;
+    box-shadow: 1px 5px 5px rgb(165, 165, 165);
+    position: fixed;
+    left: 0;
+    border-top: 1px rgb(165, 165, 165) solid;
+    margin-top: 140px;
+}
+
+
+@font-face{
+    font-family: 'GrandHotel';
+    src: url('/camagru/public/polices/GrandHotel-Regular.otf');
+}
+
+ul{
+    list-style-type: none;
+    font-size: 35px;
+    font-family: 'GrandHotel';
+}
+
+li{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+
+.border{
+    border-bottom: 1px rgb(165, 165, 165) solid;
+    width: 95px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.this{
+    color: #1e272e;
+    padding-top: 20px;
+}
+
+.other{
+    color: #1e272e;
+    margin-top: 20px;
+}
+
+#home{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#gallery{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#camera{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#profile{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+section{
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 140px;
+    padding-left: 225px;
+    padding-bottom: 250px;
+}
+
+#left{
+    margin: 0px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-username{
+    width: 18px;
+    height: 18px;
+    margin-right: 0px;
+}
+
+#usrname-and-likes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin-bottom: 8px;
+}
+
+#picture-of{
+    margin: 0px;
+    margin-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #353b48;
+    display: block;
+}
+
+#likes-number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#likes-likes{
+    width: 19px;
+    height: 19px;
+    margin-right: 3px;
+}
+
+#number-of-likes{
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #353b48;
+    display: block;
+}
+
+.usr-image{
+    width: 700px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+}
+
+#time-and-like{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+#time{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    margin-top: 4px;
+    padding-left: 8px;
+}
+
+#liker-and-heart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#liker{
+    margin: 0px;
+    margin-right: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #353b48;
+}
+
+#heart{
+    width: 25px;
+}
+
+#form-submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+#comment-logo{
+    width: 17px;
+    margin-right: 3px;
+    margin-bottom: -1px;
+}
+
+#comment-picture{
+    margin: 0px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1e272e;
+    width: 570px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    font-weight: bold;
+}
+
+#champs{
+    resize: none;
+    width: 570px;
+    height: 200px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: #2d3436;
+    border: 2px #34495e solid;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#champs:focus{
+    border: 2px #b33939 solid;
+}
+
+#button{
+    width: 135px;
+    height: 40px;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    border: 3px #1e272e solid;
+    background: #b33939;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#button:active {
+    background-color: #ee928b;
+}
+
+#success{
+    display: none;
+    margin: 0px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#usrCom-tittle{
+    margin: 0px;
+    margin-left: 110px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    color: #1e272e;
+    text-align: left;
+}
+
+#number-of-com{
+    font-weight: normal;
+    color: black;
+}
+
+#users-comments{
+    margin-top: 80px;
+}
+
+#com-com{
+    margin-top: 60px;
+}
+
+.comment-div{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 50%;
+}
+
+.logo-user-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.logo-username2{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.author-comm{
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    color: #40739e;
+}
+
+.comment_author{
+    margin: 0px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.comment-time{
+    margin: 0px;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+
+#no-photo{
+    margin: 0px;
+    margin-top: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+}
+
+@media all and (max-width: 950px)
+{
+    nav
+    {
+        margin-top: 105px;
+        width: 175px;
+    }
+
+    ul
+    {
+        font-size: 27px;
+    }
+
+    #home
+    {
+        width: 25px;
+    }
+
+    #gallery
+    {
+        width: 25px;
+    }
+
+    #camera
+    {
+        width: 25px;
+    }
+
+    #profile
+    {
+        width: 25px;
+    }
+
+    .border
+    {
+        width: 75px;
+    }
+
+    section
+    {
+        padding-top: 105px;
+        padding-left: 175px;
+    }
+
+    #usrname-and-likes
+    {
+        width: 520px;
+    }
+
+    #logo-username
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+    #picture-of
+    {
+        font-size: 17px;
+        margin-left: 8px;
+    }
+
+    #likes-number
+    {
+        margin-right: 20px;
+    }
+
+    #likes-likes
+    {
+        width: 16px;
+        height: 16px;
+        margin-right: 2px;
+    }
+
+    #number-of-likes
+    {
+        font-size: 18px;
+    }
+
+    .usr-image
+    {
+        width: 520px;
+    }
+
+    #time-and-like
+    {
+        width: 520px;
+    }
+
+    #time
+    {
+        font-size: 13px;
+        padding-left: 7px;
+    }
+
+    #liker
+    {
+        font-size: 17px;
+    }
+
+    #heart
+    {
+        width: 20px;
+    }
+
+    #comment-logo
+    {
+        width: 15px;
+    }
+
+    #comment-picture
+    {
+        width: 450px;
+        font-size: 16px;
+    }
+
+    #champs
+    {
+        width: 450px;
+        height: 150px;
+        padding-top: 13px;
+        padding-left: 16px;
+        font-size: 13px;
+    }
+
+    #button
+    {
+        width: 125px;
+        height: 35px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    #usrCom-tittle
+    {
+        margin-left: 0px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .comment-div
+    {
+        width: 80%;
+    }
+
+    .logo-username2
+    {
+        width: 12px;
+        margin-right: 4px;
+    }
+
+    .author-comm
+    {
+        font-size: 14px;
+    }
+
+    .comment_author
+    {
+        font-size: 13px;
+    }
+
+    .comment-time
+    {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 600px)
+{
+    nav
+    {
+        margin-top: 65px;
+        width: 75px;
+        box-shadow: 0px 5px 5px rgb(165, 165, 165);
+    }
+
+    ul
+    {
+        padding-left: 15px;
+        font-size: 19px;
+    }
+
+    #home
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #gallery
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #camera
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #profile
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    .border
+    {
+        width: 30px;
+    }
+
+    section
+    {
+        padding-left: 75px;
+        padding-bottom: 30px;
+        padding-top: 65px;
+    }
+
+    #left
+    {
+        margin-top: 50px;
+    }
+
+    #usrname-and-likes
+    {
+        width: 250px;
+        margin-bottom: 4px;
+    }
+
+    #logo-username
+    {
+        width: 11px;
+        height: 11px;
+    }
+
+    #picture-of
+    {
+        font-size: 13px;
+        margin-left: 7px;
+    }
+
+    #likes-likes
+    {
+        width: 12px;
+        height: 12px;
+    }
+
+    #number-of-likes
+    {
+        font-size: 14px;
+    }
+
+    .usr-image
+    {
+        width: 250px;
+    }
+
+    #time-and-like
+    {
+        width: 250px;
+    }
+
+    #time
+    {
+        font-size: 8px;
+        padding-left: 6px;
+    }
+
+    #liker-and-heart
+    {
+        margin-right: 7px;
+    }
+
+    #liker
+    {
+        font-size: 12px;
+        margin-right: 2px;
+    }
+
+    #heart
+    {
+        width: 14px;
+    }
+
+    #comment-logo
+    {
+        width: 11px;
+    }
+
+    #comment-picture
+    {
+        width: 230px;
+        font-size: 12px;
+    }
+
+    #champs
+    {
+        width: 230px;
+        height: 65px;
+        padding-top: 9px;
+        padding-left: 9px;
+        font-size: 7px;
+    }
+
+    #button
+    {
+        width: 80px;
+        height: 25px;
+        margin-top: 6px;
+        font-size: 9px;
+    }
+
+    #usrCom-tittle
+    {
+        font-size: 13px;
+    }
+
+    #com-com
+    {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .logo-user-div
+    {
+        margin-left: 20px;
+    }
+
+    .logo-username2
+    {
+        width: 8px;
+        margin-right: 3px;
+    }
+
+    .comment-div
+    {
+        width: 85%;
+    }
+
+    .author-comm
+    {
+        font-size: 11px;
+    }
+
+    .comment_author
+    {
+        font-size: 9px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        margin-left: 40px;
+    }
+
+    .comment-time
+    {
+        font-size: 7px;
+        margin-left: 10px;
+    }
+}

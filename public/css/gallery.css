@@ -1,0 +1,425 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#contenu{
+    min-height: 100%;
+    position: relative;
+}
+
+nav{
+    background-color: white;
+    width: 225px;
+    height: 100%;
+    box-shadow: 1px 5px 5px rgb(165, 165, 165);
+    position: fixed;
+    left: 0;
+    border-top: 1px rgb(165, 165, 165) solid;
+    margin-top: 140px;
+}
+
+
+@font-face{
+    font-family: 'GrandHotel';
+    src: url('/camagru/public/polices/GrandHotel-Regular.otf');
+}
+
+ul{
+    list-style-type: none;
+    font-size: 35px;
+    font-family: 'GrandHotel';
+}
+
+li{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+
+.border{
+    border-bottom: 1px rgb(165, 165, 165) solid;
+    width: 95px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.first{
+    color: #1e272e;
+    padding-top: 20px;
+}
+
+.this{
+    color: #b33939;
+    margin-top: 20px;
+}
+
+.other{
+    color: #1e272e;
+    margin-top: 20px;
+}
+
+#home{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#gallery{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#camera{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#profile{
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+section{
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 141px;
+    padding-left: 226px;
+    padding-bottom: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tittle-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lamp{
+    width: 65px;
+}
+
+#pictures-tittle{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    margin: 0px;
+    color: #b33939;
+    text-shadow: 1px 1px 2px #1e272e, 0 0 1em #3498db, 0 0 0.2em #3498db;
+}
+
+#gallery-empty{
+    display: none;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    margin: 0px;
+    margin-top: 150px;
+    color: gray;
+}
+
+#pictures-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 1110px;
+    height: 550px;
+}
+
+.picture-div{
+    margin-top: 15px;
+    margin-left: 10px;
+    position: relative;
+    display: inline;
+    width: 332px;
+    height: 250px;
+}
+
+.user-pictures{
+    width: 330px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.delete-img{
+    display: none;
+    width: 25px;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#number-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.number{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    text-decoration: none;
+    color: #1e272e;
+    border-radius: 3px;
+    background: #b33939;
+    margin-right: 1px;
+}
+
+#this-number{
+    background: #3498db;
+}
+
+@media all and (max-width: 1060px)
+{
+    #lamp
+    {
+        width: 62px;
+    }
+
+    #pictures-tittle
+    {
+        font-size: 37px;
+    }
+
+    #pictures-div
+    {
+        width: 805px;
+        height: 430px;
+    }
+
+    .picture-div
+    {
+        width: 247px;
+        height: 185px;
+    }
+
+    .user-pictures
+    {
+        width: 245px;
+    }
+
+    .delete-img
+    {
+        width: 22px;
+        bottom: 22px;
+        right: 19px;
+    }
+
+    .number
+    {
+        font-size: 17px;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media all and (max-width: 950px)
+{
+    nav
+    {
+        margin-top: 105px;
+        width: 175px;
+    }
+
+    ul
+    {
+        font-size: 27px;
+    }
+
+    #home
+    {
+        width: 25px;
+    }
+
+    #gallery
+    {
+        width: 25px;
+    }
+
+    #camera
+    {
+        width: 25px;
+    }
+
+    #profile
+    {
+        width: 25px;
+    }
+
+    .border
+    {
+        width: 75px;
+    }
+
+    section
+    {
+        padding-top: 106px;
+        padding-left: 176px;
+    }
+
+    #lamp
+    {
+        width: 56px;
+    }
+
+    #pictures-div
+    {
+        width: 596px;
+        height: 315px;
+        margin-top: 55px;
+    }
+
+    .picture-div
+    {
+        width: 183px;
+        height: 137px;
+    }
+
+    .user-pictures
+    {
+        width: 180px;
+    }
+
+    .delete-img
+    {
+        width: 18px;
+        bottom: 20px;
+        right: 11px;
+    }
+
+    #number-div
+    {
+        margin-top: 15px;
+    }
+
+    .number
+    {
+        font-size: 15px;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media all and (max-width: 600px)
+{
+    nav
+    {
+        margin-top: 65px;
+        width: 75px;
+        box-shadow: 0px 5px 5px rgb(165, 165, 165);
+    }
+
+    ul
+    {
+        padding-left: 15px;
+        font-size: 19px;
+    }
+
+    #home
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #gallery
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #camera
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    #profile
+    {
+        width: 20px;
+        padding-left: 12px;
+    }
+
+    .border
+    {
+        width: 30px;
+    }
+
+    section
+    {
+        padding-left: 75px;
+        padding-bottom: 115px;
+        padding-top: 66px;
+    }
+
+    #lamp
+    {
+        width: 45px;
+    }
+
+    #pictures-tittle
+    {
+        font-size: 27px;
+    }
+
+    #pictures-div
+    {
+        width: 285px;
+        height: 325px;
+        margin-top: 25px;
+    }
+
+    .picture-div
+    {
+        width: 118px;
+        height: 89px;
+    }
+
+    .user-pictures
+    {
+        width: 115px;
+    }
+
+    .delete-img
+    {
+        width: 14px;
+        bottom: 15px;
+        right: 10px;
+    }
+
+    #number-div
+    {
+        margin-top: 13px;
+    }
+
+    .number
+    {
+        font-size: 12px;
+        width: 20px;
+        height: 18px;
+    }
+}
