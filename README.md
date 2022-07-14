@@ -9,7 +9,7 @@ L'utilisateur reçoit un mail de confirmation lors de son inscription. Il a auss
 
 Pour plus de précisions sur les consignes du projet :
 - https://github.com/hg4dacha/camagru/blob/master/camagru-sujet.pdf
-../updata
+../updata.
 
 Camagru a été dévellopé en :
 - PHP, MYSQL pour le Backend
